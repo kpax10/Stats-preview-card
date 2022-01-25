@@ -1,0 +1,53 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --white-paragraph: hsla(0, 0%, 100%, 0.75);
+    --white-stats: hsla(0, 0%, 100%, 0.6);
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--very-dark-blue);
+    height: 100%;
+    padding: 22% 0%;
+}
+figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.container {
+    background-color: var(--dark-desaturated-blue);
+    max-width: 20.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+img {
+    max-width: 100%;
+    opacity: 0.4;
+}
+.tint {
+    background: hsl(277deg 98% 36%);
+}
+/* .tint {
+    position: relative;
+    float: left;
+}
+.tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: hsl(277deg 92% 39%);
+    opacity: 0.6;
+} */
