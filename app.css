@@ -18,9 +18,11 @@
 }
 body {
     background-color: var(--very-dark-blue);
-    height: 100%;
-    padding: 22% 0%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     font-size: 15px;
+    display: flex;
+    align-items: center;
 }
 figure {
     margin: 0;
@@ -87,6 +89,12 @@ span {
 }
 
 @media (min-width: 1200px) {
+    body {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
     .container {
         flex-direction: row-reverse;
         max-width: 66rem;
@@ -96,6 +104,13 @@ span {
     figure {
         width: 50%;
         height: 100%;
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+    img {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+    .tint {
+        border-radius: 0 0.5rem 0.5rem 0;
     }
     .hero {
         width: 50%;
@@ -113,5 +128,11 @@ span {
     }
     .stat-row {
         display: flex;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+    }
+    .stat-cont {
+        align-items: flex-start;
+        padding-right: 2rem;
     }
 }
